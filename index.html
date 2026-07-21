@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My First Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heatwave Prediction</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f7f6;
+        margin: 0;
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    h2 {
+        color: #d35400;
+        border-bottom: 2px solid #e67e22;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+    h3 {
+        color: #e67e22;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 30px 0;
+        font-size: 0.95em;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    table th, table td {
+        border: 1px solid #e0e0e0;
+        padding: 14px 18px;
+        text-align: left;
+    }
+    table th {
+        background-color: #d35400;
+        color: #ffffff;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    table tr:nth-of-type(even) {
+        background-color: #fdf8f5;
+    }
+    table tr:hover {
+        background-color: #f9ebe1;
+        transition: background-color 0.2s ease-in-out;
+    }
+</style>
 </head>
 <body>
-<h1>Welcome to GitHub Lab</h1>
-<p>This is a sample web page created for Git operations.</p>
+
+<div class="container">
+    <h2>Heatwave Prediction Mechanisms and Models</h2>
+
+    <p>Heatwave prediction relies on analyzing vast atmospheric and oceanic variables to forecast periods of abnormally high temperatures. Traditional numerical weather prediction (NWP) systems simulate atmospheric physics by evaluating thermodynamic equations, fluid dynamics, and surface energy balances. These models assess indicators such as surface air temperature, land surface temperature, sea surface temperatures, soil moisture anomalies, and high-pressure ridge formations (blocking highs) that trap hot air over specific geographical regions. Monitoring these physical indicators allows meteorologists to trace the onset, duration, and geographic footprint of incoming thermal anomalies.</p>
+
+    <p>Modern predictive frameworks increasingly integrate machine learning (ML) and deep learning algorithms to process high-dimensional environmental datasets faster and with greater accuracy. Models such as artificial neural networks (ANN), random forests, long short-term memory (LSTM) networks, and convolutional neural networks (CNN) analyze historical climate records to recognize complex, non-linear atmospheric patterns preceding extreme heat events. These data-driven approaches evaluate variables like relative humidity, wind vectors, and surface pressure gradients to deliver forecasts with extended lead times ranging from several days to weeks in advance.</p>
+
+    <h3>Socio-Economic and Public Health Impacts</h3>
+    <p>The socio-economic impact of heatwaves necessitates accurate early warning systems. Public health officials rely on these predictive models to issue heat advisories, mobilize cooling centers, and allocate medical resources effectively. Anticipating prolonged periods of extreme heat helps mitigate heat-related illnesses, dehydration, and cardiovascular stress among vulnerable populations, particularly the elderly and those with pre-existing health conditions.</p>
+
+    <p>Furthermore, urban environments face amplified risks due to the urban heat island effect, where infrastructure like concrete and asphalt absorbs and retains thermal energy. Advanced forecasting models now incorporate high-resolution spatial data to predict localized temperature spikes within cities. This micro-level forecasting enables targeted interventions, such as adjusting power grid loads to prevent blackouts and optimizing water distribution schedules during peak temperature phases.</p>
+
+    <h3>Climate Change and Future Forecasting</h3>
+    <p>As global temperatures continue to rise, the frequency, intensity, and duration of heatwaves are expected to increase significantly. This shifting baseline presents a unique challenge for predictive modeling, as historical data may no longer be a reliable analog for future extremes. Consequently, researchers are developing dynamic hybrid models that combine the physical constraints of NWP systems with the adaptive pattern recognition capabilities of deep learning. These next-generation systems aim to forecast unprecedented "mega-heatwaves" by incorporating real-time satellite imagery, atmospheric carbon concentrations, and changing ocean current behaviors.</p>
+
+    <h3>Key Indicators in Heatwave Prediction</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Indicator Category</th>
+                <th>Specific Variables Monitored</th>
+                <th>Role in Prediction Models</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atmospheric Pressure</td>
+                <td>Geopotential height anomalies, blocking highs</td>
+                <td>Identifies stagnant air masses that trap heat over a region, acting as the primary driver of prolonged heatwaves.</td>
+            </tr>
+            <tr>
+                <td>Surface Conditions</td>
+                <td>Soil moisture content, land surface temperature</td>
+                <td>Low soil moisture reduces evaporative cooling, amplifying surface heating and escalating air temperatures.</td>
+            </tr>
+            <tr>
+                <td>Oceanic Patterns</td>
+                <td>Sea surface temperatures (SST), ENSO cycles</td>
+                <td>Large-scale oceanic phenomena (like El Niño) alter global atmospheric circulation, increasing heatwave probabilities in specific regions.</td>
+            </tr>
+            <tr>
+                <td>Thermodynamic Data</td>
+                <td>Relative humidity, thermal radiation</td>
+                <td>Helps calculate the "heat index" or "feels-like" temperature, which is crucial for assessing human health risks.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>
